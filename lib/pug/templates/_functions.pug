@@ -1,0 +1,72 @@
+-
+    function openPopup() {
+        return "javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;";
+    }
+
+    function bg(text) {
+        return util.format("background-image: url('%s');", text);
+    }
+
+    function bgFromPHP(text) {
+        return bg(php(text));
+    }
+
+    function bgFromURL(text) {
+        return bg(echo(text));
+    }
+
+    function echoImgURLFromField(field, size, id) {
+        var _size = size ? util.format("'%s'", size) : 'null',
+            _id = id || 'null';
+        return echo(util.format("get_image_field_url('%s', %s, %s);",field, _id, _size))
+    }
+
+    function bgFromField(field, id, size) {
+        return bg(echoImgURLFromField(field, size, id));
+    }
+
+    function echoFeaturedImage(size, isIcon, id){
+        var _size = size ? "'" + size + "'": 'null',
+            _isIcon = !!isIcon,
+            _id = id || 'null';
+        return echo(util.format("get_post_featured_img(%s, %s, %s)" ,_size , _isIcon, _id))
+    }
+
+    function bgFromFeaturedImage(size, isIcon, id) {
+        return bg(echoFeaturedImage(size, isIcon, id));
+    }
+
+    function echoField(fieldName, id) {
+        if(id){
+            return echo(util.format('get_field("%s", %s);', fieldName, id));
+        } else {
+            return echo(util.format('get_field("%s");', fieldName));
+        }
+    }
+
+    function echoSubField(fieldName) {
+        return echo(util.format('get_sub_field("%s");', fieldName));
+    }
+
+    function _e(str) {
+        return php(util.format('_e("%s", "%s");', str, namespace));
+    }
+
+    function _x(str) {
+        return php(util.format('_x("%s", "%s");', str, namespace));
+    }
+
+    function echo(str) {
+        return php(util.format('echo %s;', str));
+    }
+
+    function echoThemeMod(str) {
+        return echo(util.format("get_theme_mod(\"%s\")", str));
+    }
+
+    function php(str) {
+        return util.format('<?php %s ?>', str);
+    }
+    function buildClassListStr(blockClass, classList){
+        return classList.map(function(className){ return blockClass + '--' + className; }).join(' ');
+    }

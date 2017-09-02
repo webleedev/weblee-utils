@@ -1,0 +1,74 @@
+{
+  "name": "boilerplate",
+  "workingDir": "default",
+  "tasks" : [
+    {
+      "name" : "pug-html",
+      "input": "pug/",
+      "output": "./",
+      "options": {
+        "fileExtension": "html"
+      }
+    },
+    {
+      "name" : "pug-ejs",
+      "input": "js/src/modules/views/html/",
+      "output": "js/src/modules/views/",
+      "options": {
+        "fileExtension": "ejs"
+      }
+    },
+    {
+      "name" : "pug-php",
+      "input": "pug/",
+      "output": "./",
+      "options": {
+        "fileExtension": "php"
+      }
+    },
+    {
+      "name" : "pug-beautify",
+      "input": "pug/"
+    },
+    {
+      "name" : "js-beautify",
+      "input": "js/src/",
+      "ignore" : ["**/node_modules/**", "**/vendors/**"]
+    },
+    {
+      "name" : "jsx",
+      "input": "js/src/",
+      "ignore" : ["**/node_modules/**", "**/vendors/**"]
+    },
+    {
+      "name" : "stylus",
+      "input": "stylus/",
+      "output": "stylesheets/"
+    },
+    {
+      "name": "sass",
+      "input": "sass/",
+      "output": "stylesheets/"
+    },
+    {
+      "name": "css",
+      "input": "stylesheets/",
+      "output": "stylesheets/"
+    },
+    {
+      "name": "less",
+      "input": "less/",
+      "output": "stylesheets/"
+    },
+    {
+      "name": "html2pug",
+      "input": "/",
+      "output": "pug/"
+    },
+    {
+      "name": "php2pug",
+      "input": "/",
+      "output": "pug/"
+    }
+  ]
+}
