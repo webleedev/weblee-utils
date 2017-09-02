@@ -1,4 +1,4 @@
-em-auto(fontSize, baseSize = false, isMobile) {
+em-auto(fontSize, baseSize = false, isMobile = false) {
   $defaultParentSize = baseSize || @font-size || 1em;
   $parentFontSize = px($defaultParentSize);
   $mobileAdjustment = 1;
