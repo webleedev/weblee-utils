@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 
-const Project = require('gulp-utils/lib/project');
-const Utils = require('gulp-utils/lib/utils');
+const Project = require('weblee-utils/lib/project');
+const Utils = require('weblee-utils/lib/utils');
 
 const project = new Project();
 
