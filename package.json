@@ -63,6 +63,7 @@
     "stylus-require-css-evaluator": "0.0.1",
     "stylus-type-utils": "0.0.3",
     "superagent": "^3.6.0",
+    "webpack": "^3.5.5",
     "yargs": "^8.0.2"
   },
   "devDependencies": {
