@@ -7,7 +7,7 @@ const jsonConfig = (function () {
         return JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'weblee-config.json')));
     } catch (err) {
         console.error(err);
-        return {};
+        return {tasks: []};
     }
 })();
 const avocodeDefaults = {
