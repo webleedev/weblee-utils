@@ -1,5 +1,5 @@
 # weblee-utils [![Build Status](https://travis-ci.org/weblee-solutions/weblee-utils.svg?branch=master)](https://travis-ci.org/weblee-solutions/weblee-utils)
-A cli/gulp library for quicker for quicker front-end development
+A cli/gulp library for quicker front-end development
 
 #### How To Use
 1. run `npm i --save-dev git://github.com/weblee-solutions/weblee-utils.git`
