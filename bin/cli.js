@@ -9,7 +9,7 @@ const yargs = require('yargs');
 const Utils = require('../lib/utils');
 const Project = require('../lib/project');
 
-const root = path.join(process.cwd(), 'lib/');
+const root = path.join(__dirname, '../lib/');
 const libRoots = [
     'pug',
     'javascript',
@@ -18,6 +18,7 @@ const libRoots = [
     'sass',
     'less',
     'css',
+    'ts',
     'extra'
 ];
 const preDefinedTaskNames = [
