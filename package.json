@@ -46,7 +46,7 @@
     "requirejs": "^2.3.5",
     "sass-cache": "0.0.1",
     "socket.io": "^1.3.7",
-    "stylus": "git+https://github.com/khalidhoffman/stylus-bem#stylus-bem",
+    "stylus-bem": "^0.54.10",
     "stylus-bem-evaluator": "0.0.5",
     "stylus-require-css-evaluator": "0.0.1",
     "stylus-type-utils": "0.0.3",
