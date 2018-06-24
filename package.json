@@ -21,7 +21,6 @@
     "babel-preset-es2015": "^6.9.0",
     "bourbon": "^4.2.7",
     "colors": "^1.1.2",
-    "compass-mixins": "^0.12.10",
     "cssnano": "^3.8.0",
     "fs-extra": "^4.0.1",
     "glob": "^7.1.2",
@@ -32,8 +31,6 @@
     "lodash": "^4.6.1",
     "mz": "^2.6.0",
     "nib": "^1.1.0",
-    "node-compass": "^0.2.4",
-    "node-sass": "^3.4.2",
     "php2pug": "^0.3.1",
     "postcss": "^5.0.19",
     "postcss-discard-duplicates": "^2.0.1",
@@ -43,8 +40,6 @@
     "pug-bem-lexer": "0.0.9",
     "pug-bemify": "^1.0.4",
     "pug-php-filter": "0.0.1",
-    "requirejs": "^2.3.5",
-    "sass-cache": "0.0.1",
     "socket.io": "^1.3.7",
     "stylus-bem": "^0.54.10",
     "stylus-bem-evaluator": "0.0.5",
@@ -57,5 +52,12 @@
   "devDependencies": {
     "chai": "^4.1.1",
     "mocha": "^3.5.0"
+  },
+  "optionalDependencies": {
+    "compass-mixins": "^0.12.10",
+    "node-compass": "^0.2.4",
+    "node-sass": "^3.13.1",
+    "requirejs": "^2.3.5",
+    "sass-cache": "0.0.1"
   }
 }
