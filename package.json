@@ -56,7 +56,7 @@
   "optionalDependencies": {
     "compass-mixins": "^0.12.10",
     "node-compass": "^0.2.4",
-    "node-sass": "^3.13.1",
+    "node-sass": "^4.9.1",
     "requirejs": "^2.3.5",
     "sass-cache": "0.0.1"
   }
