@@ -6,7 +6,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/weblee-solutions/weblee-utils.git"
+    "url": "https://github.com/weblee-co/weblee-utils.git"
   },
   "main": "./index.html",
   "scripts": {
@@ -22,13 +22,13 @@
     "bourbon": "^4.2.7",
     "colors": "^1.1.2",
     "compass-mixins": "^0.12.10",
-    "cssnano": "^3.8.0",
+    "cssnano": "^4.1.10",
     "fs-extra": "^4.0.1",
     "glob": "^7.1.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "js-beautify": "^1.5.10",
-    "kouto-swiss": "^0.12.0",
-    "less": "^2.7.1",
+    "kouto-swiss": "^1.1.0",
+    "less": "^3.9.0",
     "lodash": "^4.6.1",
     "mz": "^2.6.0",
     "nib": "^1.1.0",
@@ -41,11 +41,11 @@
     "pug": "^2.0.0-rc.3",
     "pug-beautify": "^0.1.1",
     "pug-bem-lexer": "0.0.9",
-    "pug-bemify": "^1.0.4",
+    "pug-bemify": "git+https://github.com/webleedev/pug-bemify.git",
     "pug-php-filter": "0.0.1",
     "requirejs": "^2.3.5",
     "sass-cache": "0.0.1",
-    "socket.io": "^1.3.7",
+    "socket.io": "^2.2.0",
     "stylus-bem": "^0.54.10",
     "stylus-bem-evaluator": "0.0.5",
     "stylus-require-css-evaluator": "0.0.1",
@@ -56,6 +56,6 @@
   },
   "devDependencies": {
     "chai": "^4.1.1",
-    "mocha": "^3.5.0"
+    "mocha": "^6.1.1"
   }
 }
