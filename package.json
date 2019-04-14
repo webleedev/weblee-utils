@@ -41,7 +41,7 @@
     "pug": "^2.0.0-rc.3",
     "pug-beautify": "^0.1.1",
     "pug-bem-lexer": "0.0.9",
-    "pug-bemify": "git+https://github.com/webleedev/pug-bemify.git",
+    "pug-bemify": "^1.1.0",
     "pug-php-filter": "0.0.1",
     "requirejs": "^2.3.5",
     "sass-cache": "0.0.1",
