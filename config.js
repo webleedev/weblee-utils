@@ -1,10 +1,27 @@
 const path = require('path');
 const fs = require('fs');
 
-const rootDirectory = process.cwd();
-const jsonConfig = (function () {
+const utils = require('./lib/utils');
+
+const rootDirectory = utils.getPackageJSONDir();
+const jsonConfig = (function getProjectConfig() {
+    const projectConfigNames = [
+        'weblee.config.json',
+        'weblee-config.json'
+    ];
+
     try {
-        return JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'weblee-config.json')));
+        const projectRootFiles = fs.readdirSync(rootDirectory);
+        const projectConfigName = projectRootFiles.find(filename => {
+            return projectConfigNames.includes(filename);
+        });
+
+        if (!projectConfigName) {
+            throw new Error(`Could not find a valid weblee-utils config file (${projectConfigNames.join('|')}) in path '${rootDirectory}'`);
+        }
+
+        return JSON.parse(fs.readFileSync(path.resolve(rootDirectory, projectConfigName), 'utf8'));
+
     } catch (err) {
         console.error(err);
         return {tasks: []};
